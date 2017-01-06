@@ -10,7 +10,7 @@ Toolkit Collection ( Helpers, Extensions, Snippets ) for Swift
 
 ## Installation with CocoaPods
 
-BlinkingLabel is available through [CocoaPods](http://cocoapods.org). To install
+ZSwiftKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
