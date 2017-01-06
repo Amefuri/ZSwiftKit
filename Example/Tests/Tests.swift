@@ -1,5 +1,6 @@
 import UIKit
 import XCTest
+import ZSwiftKit
 
 class Tests: XCTestCase {
     
