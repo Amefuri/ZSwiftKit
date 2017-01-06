@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ZSwiftKit_Tests' do
+  pod 'ZSwiftKit', :path => '../'
+  
+  
+end
