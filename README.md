@@ -1,9 +1,5 @@
 # ZSwiftKit
 
-[![Version](https://img.shields.io/cocoapods/v/BlinkingLabel.svg?style=flat)](http://cocoapods.org/pods/ZSwiftKit)
-[![License](https://img.shields.io/cocoapods/l/BlinkingLabel.svg?style=flat)](http://cocoapods.org/pods/ZSwiftKit)
-[![Platform](https://img.shields.io/cocoapods/p/BlinkingLabel.svg?style=flat)](http://cocoapods.org/pods/ZSwiftKit)
-
 ## Overview
 
 Toolkit Collection ( Helpers, Extensions, Snippets ) for Swift
