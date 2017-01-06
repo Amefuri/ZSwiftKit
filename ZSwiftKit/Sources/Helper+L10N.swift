@@ -12,7 +12,7 @@ import UIKit
 public extension Helper {
     struct L10N {
         
-        static func setText(_ target:AnyObject, text:String) {
+        public static func setText(_ target:AnyObject, text:String) {
             if target is UILabel {
                 let target = target as! UILabel
                 target.text = text

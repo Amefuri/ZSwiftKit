@@ -12,17 +12,17 @@ import UIKit
 public extension Helper {
     struct UI {
         
-        static func HideUIBarButton(_ button:UIBarButtonItem) {
+        public static func HideUIBarButton(_ button:UIBarButtonItem) {
             button.isEnabled = false
             button.tintColor = UIColor.clear
         }
         
-        static func ShowUIBarButton(_ button:UIBarButtonItem) {
+        public static func ShowUIBarButton(_ button:UIBarButtonItem) {
             button.isEnabled = true
             button.tintColor = nil
         }
         
-        static func configCircularView(_ view:UIView) {
+        public static func configCircularView(_ view:UIView) {
             view.layer.cornerRadius    = view.frame.size.height / 2;
             view.layer.masksToBounds   = true;
         }

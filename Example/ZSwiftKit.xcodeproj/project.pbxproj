@@ -20,6 +20,22 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62E1483614BE234F825AE8C4 /* Pods-ZSwiftKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSwiftKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZSwiftKit_Tests/Pods-ZSwiftKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		72284B5C1E1F7ECD00A98431 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		72284B5D1E1F7ECD00A98431 /* Helper+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Common.swift"; sourceTree = "<group>"; };
+		72284B5E1E1F7ECD00A98431 /* Helper+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Data.swift"; sourceTree = "<group>"; };
+		72284B5F1E1F7ECD00A98431 /* Helper+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Date.swift"; sourceTree = "<group>"; };
+		72284B601E1F7ECD00A98431 /* Helper+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Image.swift"; sourceTree = "<group>"; };
+		72284B611E1F7ECD00A98431 /* Helper+L10N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+L10N.swift"; sourceTree = "<group>"; };
+		72284B621E1F7ECD00A98431 /* Helper+RealmSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+RealmSwift.swift"; sourceTree = "<group>"; };
+		72284B631E1F7ECD00A98431 /* Helper+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UI.swift"; sourceTree = "<group>"; };
+		72284B641E1F7ECD00A98431 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		72284B651E1F7ECD00A98431 /* NSAttributeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributeString.swift; sourceTree = "<group>"; };
+		72284B661E1F7ECD00A98431 /* NSData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSData.swift; sourceTree = "<group>"; };
+		72284B671E1F7ECD00A98431 /* SequenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
+		72284B681E1F7ECD00A98431 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		72284B691E1F7ECD00A98431 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		72284B6A1E1F7ECD00A98431 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		72284B6B1E1F7ECD00A98431 /* UITextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextfield.swift; sourceTree = "<group>"; };
 		7A1814D59BF8391665A3A436 /* ZSwiftKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZSwiftKit.podspec; path = ../ZSwiftKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +54,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				72284B591E1F7ECD00A98431 /* ZSwiftKit */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -79,6 +96,46 @@
 				228762509C30EB72C92BBB9A /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		72284B591E1F7ECD00A98431 /* ZSwiftKit */ = {
+			isa = PBXGroup;
+			children = (
+				72284B5A1E1F7ECD00A98431 /* Snippets */,
+				72284B5B1E1F7ECD00A98431 /* Sources */,
+			);
+			name = ZSwiftKit;
+			path = ../ZSwiftKit;
+			sourceTree = "<group>";
+		};
+		72284B5A1E1F7ECD00A98431 /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Snippets;
+			sourceTree = "<group>";
+		};
+		72284B5B1E1F7ECD00A98431 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				72284B5C1E1F7ECD00A98431 /* CALayer.swift */,
+				72284B5D1E1F7ECD00A98431 /* Helper+Common.swift */,
+				72284B5E1E1F7ECD00A98431 /* Helper+Data.swift */,
+				72284B5F1E1F7ECD00A98431 /* Helper+Date.swift */,
+				72284B601E1F7ECD00A98431 /* Helper+Image.swift */,
+				72284B611E1F7ECD00A98431 /* Helper+L10N.swift */,
+				72284B621E1F7ECD00A98431 /* Helper+RealmSwift.swift */,
+				72284B631E1F7ECD00A98431 /* Helper+UI.swift */,
+				72284B641E1F7ECD00A98431 /* Helper.swift */,
+				72284B651E1F7ECD00A98431 /* NSAttributeString.swift */,
+				72284B661E1F7ECD00A98431 /* NSData.swift */,
+				72284B671E1F7ECD00A98431 /* SequenceType.swift */,
+				72284B681E1F7ECD00A98431 /* String.swift */,
+				72284B691E1F7ECD00A98431 /* UIApplication.swift */,
+				72284B6A1E1F7ECD00A98431 /* UIImage.swift */,
+				72284B6B1E1F7ECD00A98431 /* UITextfield.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		8DF432C274D7BE1868593CF9 /* Pods */ = {

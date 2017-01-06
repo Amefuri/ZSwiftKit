@@ -12,7 +12,7 @@ public extension Sequence {
     
     /// Categorises elements of self into a dictionary, with the keys given by keyFunc
     
-    func categorise<U : Hashable>(_ keyFunc: (Iterator.Element) -> U) -> [U:[Iterator.Element]] {
+    public func categorise<U : Hashable>(_ keyFunc: (Iterator.Element) -> U) -> [U:[Iterator.Element]] {
         var dict: [U:[Iterator.Element]] = [:]
         for el in self {
             let key = keyFunc(el)

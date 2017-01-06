@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension Data {
-    var attributedString: NSAttributedString? {
+    public var attributedString: NSAttributedString? {
         do {
             return try NSAttributedString(data: self, options:[NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: String.Encoding.utf8], documentAttributes: nil)
         } catch let error as NSError {

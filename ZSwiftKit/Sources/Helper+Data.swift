@@ -12,7 +12,7 @@ public extension Helper {
     struct Data {
         
         // To document folder as root, support only one level folder
-        static func saveData(_ data:Foundation.Data, folder:String , filename:String)-> String {
+        public static func saveData(_ data:Foundation.Data, folder:String , filename:String)-> String {
             
             // Always Attempt to Create Folder
             do {
@@ -30,12 +30,12 @@ public extension Helper {
             return filePath
         }
         
-        static func loadData(_ path:String)-> Foundation.Data? {
+        public static func loadData(_ path:String)-> Foundation.Data? {
             let loadPath = Helper.getDocumentsDirectory().appendingPathComponent(path)
             return (try? Foundation.Data(contentsOf: URL(fileURLWithPath: loadPath)))
         }
         
-        static func deleteData(_ path:String) {
+        public static func deleteData(_ path:String) {
             do {
                 let fullPath = Helper.getDocumentsDirectory().appendingPathComponent(path)
                 try FileManager.default.removeItem(atPath: fullPath)
