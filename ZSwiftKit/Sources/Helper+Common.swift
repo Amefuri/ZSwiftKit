@@ -22,16 +22,21 @@ public extension Helper {
     
     public static func AlertConfirm(view:UIViewController, title:String, message:String, confirmText:String, cancelText:String, isInverseButtonPos:Bool, confirmCompletion: ((UIAlertAction) -> Void)?, cancelCompletion: ((UIAlertAction) -> Void)?) {
         let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
+        let cancelAction = UIAlertAction(title: cancelText, style: .cancel, handler: cancelCompletion)
+        let okAction = UIAlertAction(title: confirmText, style: .default, handler: confirmCompletion)
+      
         if isInverseButtonPos {
-            alertMessage.addAction(UIAlertAction(title: cancelText, style: .cancel, handler: cancelCompletion))
-            alertMessage.addAction(UIAlertAction(title: confirmText, style: .default, handler: confirmCompletion))
+          alertMessage.addAction(cancelAction)
+          alertMessage.addAction(okAction)
         }
         else {
-            alertMessage.addAction(UIAlertAction(title: confirmText, style: .default, handler: confirmCompletion))
-            alertMessage.addAction(UIAlertAction(title: cancelText, style: .cancel, handler: cancelCompletion))
+          alertMessage.addAction(okAction)
+          alertMessage.addAction(cancelAction)
         }
-        
+      
+        if #available(iOS 9.0, *) {
+          alertMessage.preferredAction = okAction
+        }
         view.present(alertMessage, animated: true, completion: nil)
     }
   
