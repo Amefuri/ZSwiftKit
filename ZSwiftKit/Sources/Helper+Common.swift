@@ -24,17 +24,17 @@ public extension Helper {
         let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         if isInverseButtonPos {
-            alertMessage.addAction(UIAlertAction(title: cancelText, style: .default, handler: cancelCompletion))
+            alertMessage.addAction(UIAlertAction(title: cancelText, style: .cancel, handler: cancelCompletion))
             alertMessage.addAction(UIAlertAction(title: confirmText, style: .default, handler: confirmCompletion))
         }
         else {
             alertMessage.addAction(UIAlertAction(title: confirmText, style: .default, handler: confirmCompletion))
-            alertMessage.addAction(UIAlertAction(title: cancelText, style: .default, handler: cancelCompletion))
+            alertMessage.addAction(UIAlertAction(title: cancelText, style: .cancel, handler: cancelCompletion))
         }
         
         view.present(alertMessage, animated: true, completion: nil)
     }
-    
+  
     public static func AlertInput(view:UIViewController, title:String, message:String, confirmText:String, cancelText:String, isInverseButtonPos:Bool, inputPlaceholder:String, inputText:String, confirmCompletion: ((UIAlertAction, String) -> Void)?, cancelCompletion: ((UIAlertAction) -> Void)?) {
         let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertMessage.addTextField { (textField) in
