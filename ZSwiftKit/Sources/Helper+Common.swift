@@ -10,14 +10,14 @@ import UIKit
 
 public extension Helper {
     
-    public static func Alert(view:UIViewController, title:String, message:String) {
-        Alert(view: view, title: title, message: message, doneCompletion: nil)
+    public static func Alert(view:UIViewController, title:String, message:String, confirmText: String) {
+      Alert(view: view, title: title, message: message, confirmText: confirmText, doneCompletion: nil)
     }
-    
-    public static func Alert(view:UIViewController, title:String, message:String, doneCompletion: ((UIAlertAction) -> Void)?) {
-        let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: doneCompletion))
-        view.present(alertMessage, animated: true, completion: nil)
+  
+    public static func Alert(view:UIViewController, title:String, message:String, confirmText: String, doneCompletion:  ((UIAlertAction) -> Void)?) {
+      let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
+      alertMessage.addAction(UIAlertAction(title: confirmText, style: .default, handler: doneCompletion))
+      view.present(alertMessage, animated: true, completion: nil)
     }
     
     public static func AlertConfirm(view:UIViewController, title:String, message:String, confirmText:String, cancelText:String, isInverseButtonPos:Bool, confirmCompletion: ((UIAlertAction) -> Void)?, cancelCompletion: ((UIAlertAction) -> Void)?) {
