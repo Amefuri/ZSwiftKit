@@ -1,6 +1,11 @@
 use_frameworks!
-target 'ZSwiftKit_Tests' do
+
+target 'ZSwiftKit_Example' do
   pod 'ZSwiftKit', :path => '../'
-  
-  
+
+  target 'ZSwiftKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end
