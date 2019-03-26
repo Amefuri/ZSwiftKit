@@ -9,7 +9,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZSwiftKit'
   s.version          = '0.2.1'
-  s.swift_version    = '4.2'
   s.summary          = 'Toolkit Collection ( Helpers, Extensions, Snippets ) for Swift'
   
   # This description is used to generate tags and improve search results.
